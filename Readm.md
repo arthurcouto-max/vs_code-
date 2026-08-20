@@ -51,7 +51,7 @@ No Prompt de Comando do Windows, foi utilizado:
 
 Endereço IPv4 retornado:
 
-`COLOCAR AQUI O IP QUE APARECER NO SEU CMD`
+`186.192.83.5`
 
 O comando ping consulta o domínio e permite identificar o endereço IP relacionado ao servidor, além de testar a comunicação entre o computador e o destino.
 
