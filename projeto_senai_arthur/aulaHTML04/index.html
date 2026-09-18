@@ -1,10 +1,15 @@
-<!--
-Descricao: Exercícios da Aula 02 - Introdução básica ao HTML e CSS
-nome_arquivo: index.html
-nome_exercicio: Atividade 02 - Introdução básica ao HTML e CSS
-nome_aluno: Arthur Dias Miguel de Oliveira Couto
-email_aluno: arthurdiascouto@gmail.com
-turma: TDE-1BAA-26
+<!--Crie um arquivo index.html e um arquivo estilo.css.
+No index.html, crie:
+Um <h1> com a classe titulo.
+Um parágrafo (<p>) com o ID descricao.
+Três parágrafos (<p>) com a classe paragrafo-simples.
+Um menu de navegação (<nav>) com links (<a>).
+No estilo.css, aplique os seguintes estilos usando os seletores:
+Estilize a classe titulo com uma cor de sua escolha.
+Estilize o ID descricao com um tamanho de fonte maior.
+Estilize os parágrafos com a classe paragrafo-simples usando um seletor de classe.
+Estilize todos os links dentro da tag nav usando um seletor de descendente.
+Use o seletor universal para zerar as margens e paddings de todos os elementos. 
 -->
 <!DOCTYPE html>
 <html lang="pt">
@@ -13,28 +18,12 @@ turma: TDE-1BAA-26
     <meta charset="UTF-8">
     <title>Botijão de Gás Cromado</title>
 </head>
-<body style="background-color:yellow;">
-<h1>Meu Portifólio</h1>
-<h2 style="color:blue;">Metal</h2>
-<h3 style="text-align:center;">Cara do rock</h3>
-<p style="font-family:Arial;">musica boa</p>
-<p usando style="font-size:20px;">metallica</p>
-<p style="background-color:greenyellow;">cor verde lima</p>
-<img src="https://i.imgur.com/7CTOzwph.jpg"
-alt="yeah yeah"
-    width="200;"
-    style="border:5pxsolidblack;">
-    <marquee>Jhon Metallica</marquee>
-        <video controls autoplay widht="500" 
-        source src="video.mp3" type="video/mp3">
-    </video>
-    <section style="border:5pxsolidblack;">
-    <h1>sobre mim</h1> 
-</section>
-<section style="margin:20px;">
-    <h1>Outras bandas excelentes</h1>
-    <h2>Black Sabbath</h2>
-    <h3>Iron maiden</h3>
-</section>
+<body>
+ <h1 id="titulo">titulo</h1>
+ <p classe="titulo">titulo</p>
+ <p classe="descricao">A tecnologia está cada vez mais presente no nosso dia a dia, facilitando tarefas que antes levavam muito tempo. Com apenas alguns cliques, podemos pesquisar informações, conversar com pessoas de outros lugares e aprender coisas novas. Porém, é importante saber utilizar essas ferramentas de maneira responsável.</p>
+ <p classe="descricao">Em uma tarde tranquila, o céu começou a ficar cheio de nuvens enquanto o vento balançava as árvores. As pessoas que estavam na rua começaram a procurar abrigo, esperando a chuva passar. Pouco tempo depois, o sol apareceu novamente e deixou o ambiente mais agradável.</p>
+ <p classe="descricao">A música é uma forma de expressão que consegue transmitir sentimentos e histórias de diferentes maneiras. Cada pessoa pode ter um gosto diferente, mas isso torna a música ainda mais interessante, pois existem inúmeros estilos para conhecer. Muitas vezes, uma simples música pode marcar um momento importante da vida de alguém.</p>
+<nav> <a href="https://www.google.com">Google</a></nav>
 </body>
 </html>
