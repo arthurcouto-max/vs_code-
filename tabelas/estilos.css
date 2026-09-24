@@ -1,4 +1,21 @@
-footer {
+main{
+     background-color: whitesmoke;
+    color:black;
+    padding: 5px;
+}
+main table{
+    width: 400px;
+    border: 1px solid;
+    
+}
+main table td, main table th{
+    border: 1px solid;
+}
+main table td img:hover{
+    width: 150px;
+}
+
+footer{
     background-color: rgb(78, 78, 78);
     color:aliceblue;
     padding: 5px;
