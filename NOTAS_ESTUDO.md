@@ -94,3 +94,13 @@ O HTML5, porque ele é usado para criar e organizar a estrutura das páginas de 
 ## Conclusão
 
 A atividade permitiu compreender a diferença entre HTML, XML e Markdown e suas principais aplicações. Também foi possível analisar na prática como funcionam elementos da infraestrutura da Web, como domínios, DNS, endereços IP e servidores responsáveis por um domínio.
+
+Pesquisa de Analise de Projeto
+
+Mapeamento das Plataformas
+O sistema pode ser usado em diferentes tipos de dispositivos, como computadores, tablets e celulares ou coletores. Por isso, a tela precisa se adaptar ao tamanho de cada dispositivo. Em telas menores, algumas informações podem precisar ficar mais organizadas para não deixar tudo apertado ou difícil de visualizar.
+Capacidade da Plataforma Computacional
+O tamanho da tela influencia bastante na forma como o sistema será usado. Em telas maiores, é possível mostrar mais informações em uma tabela sem deixar a visualização muito complicada. Já em tablets e celulares, é melhor diminuir a quantidade de informações mostradas ao mesmo tempo e deixar os botões maiores, facilitando o toque e evitando que o usuário aperte no lugar errado.
+Princípios do Projeto de Software
+No Figma, as escolhas foram feitas pensando em deixar o sistema simples e fácil de usar. Os elementos seguem um padrão de cores, tamanhos e posições, deixando as telas mais organizadas e parecidas entre si. Também foi pensado no tamanho dos botões, na facilidade para encontrar as informações e na forma como o usuário vai navegar pelo sistema. Essas escolhas ajudam a melhorar a usabilidade e deixam o projeto mais organizado.
+
