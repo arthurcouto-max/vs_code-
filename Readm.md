@@ -163,3 +163,44 @@ O formulário deve permitir que o usuário passe pelos campos usando a tecla Tab
 
 As escolhas feitas para a tela de login foram pensadas para deixar o formulário simples, organizado e fácil de entender. O uso correto dos labels, a diferença entre os botões, os estados dos campos e os cuidados com acessibilidade ajudam a melhorar a experiência do usuário.
 
+# Projeto Nova-Web - UI/UX Design
+
+## Aula 09: UX de Tabelas de Dados e Telas de Perfil
+
+### 1. Pesquisa Teórica - UX para Tabelas Corporativas
+
+#### Alinhamento de Dados
+
+O alinhamento das informações ajuda a deixar a tabela mais organizada e facilita a leitura.
+
+* Textos devem ficar alinhados à esquerda, pois isso facilita a leitura das palavras.
+* Números e valores em dinheiro devem ficar alinhados à direita, deixando os valores mais fáceis de comparar.
+* Informações como status e botões de ações podem ficar centralizados para facilitar a visualização.
+
+#### Filtros e Busca
+
+A pesquisa deve ficar em uma área fácil de encontrar, de preferência na parte de cima da tabela. Assim, o usuário consegue procurar uma informação rapidamente.
+
+Os filtros que possuem mais opções podem ser colocados em menus suspensos (dropdowns). Dessa forma, eles não ocupam muito espaço na tela e deixam a tabela mais organizada.
+
+#### Hierarquia Visual
+
+Em tabelas muito grandes, o cabeçalho pode ficar fixo enquanto o usuário rola a página. Isso ajuda porque os nomes das colunas continuam aparecendo mesmo quando estamos mais abaixo na tabela.
+
+Também podem ser usadas cores alternadas nas linhas, conhecidas como zebra striping, ou bordas leves. Isso ajuda o usuário a acompanhar cada linha sem se perder durante a leitura.
+
+---
+
+### 2. Especificação do Protótipo (Figma)
+
+**Link do Projeto no Figma:** [Cole o link do seu projeto aqui]
+
+#### Telas Desenvolvidas
+
+1. **Perfil de Usuário:**
+
+   A tela de perfil apresenta o avatar do usuário, seus dados pessoais e um formulário para editar essas informações. Também mostra o nível de permissão do usuário dentro do sistema.
+
+2. **Área de Consulta (Tabela):**
+
+   A tela apresenta uma lista de usuários. Nela é possível pesquisar informações, organizar os dados, passar entre as páginas e realizar ações como editar ou excluir um usuário.
