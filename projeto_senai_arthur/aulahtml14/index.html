@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1>Aula 14</h1>
+
+    <form>
+        <label for="campo1">Campo 01:</label>
+        <input type="text" id="campo1" value="Valor Padrão">
+
+        <label for="campo2">Campo 02:</label>
+        <input type="text" id="campo2"
+               placeholder="Digite algo..." disabled>
+        <button type="button" id="habilitar">Habilitar</button>
+
+        <p>
+        <label for="campo3">Campo 03:</label>
+        <input type="text" id="campo3" required>
+        </p>
+
+        <label for="campo4">Campo 04:</label>
+        <input type="text" id="campo4"
+               value="Somente leitura" readonly>
+    </form>
+
+        <script>
+            const campo2 = document.getElementById("campo2");
+            const botao = document.getElementById("habilitar");
+
+                botao.addEventListener("click", function() {
+            campo2.disabled = false;
+            campo2.focus();
+        });
+
+            campo2.addEventListener("blur", function() {
+            campo2.disabled = true;
+        });
+</script>
+
+</body>
+</html>
