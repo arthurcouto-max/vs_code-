@@ -1,23 +1,157 @@
-.titulo {
-    color: red;
-}
-/* Zera margem e padding de todos os elementos */
-*{
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Estiliza o ID descricao */
-#descricao {
-    font-size: 24px;
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-/* Estiliza os parágrafos da classe paragrafo-simples */
-.paragrafo-simples {
-    color: blue;
+/* CABEÇALHO */
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid red;
 }
 
-/* Estiliza todos os links dentro do nav */
+header h1 {
+    color: #ff3333;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+header p {
+    color: #ccc;
+    margin-top: 8px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+nav {
+    background-color: #181818;
+    text-align: center;
+    padding: 15px;
+}
+
 nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
     color: red;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* FORMULÁRIOS */
+
+.form,
+.container {
+    background-color: #333;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+label,
+.form-field p {
+    color: white;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #222;
+    color: white;
+    border: 1px solid #666;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    background-color: #222;
+    color: white;
+    border-color: red;
+    box-shadow: 0 0 5px red;
+}
+
+/* BOTÕES */
+
+button,
+.btn {
+    background-color: #b30000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #ff2222;
+    color: white;
+}
+
+/* CARDS E ÁREAS DE CONTEÚDO */
+
+.card {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h2,
+.card h3 {
+    color: #ff3333;
+}
+
+/* IMAGENS */
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* TÍTULOS */
+
+h2 {
+    color: #ff3333;
+    margin-bottom: 20px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid red;
+}
+
+footer p {
+    margin: 5px;
 }

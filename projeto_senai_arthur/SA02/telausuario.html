@@ -65,7 +65,8 @@
         <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
                 </div>
                 <div class="form-group">
-                  <button type="button" onclick="window.location.href='index.html'" class="btn btn-primary">Salvar
+               <button type="button" onclick="salvarDados()" class="btn btn-primary">
+                Salvar
             </button>
                 </div>
         </form>
@@ -86,6 +87,43 @@
                 msg.textContent = 'CPF inválido. Deve conter 11 dígitos'
             }
         }
+
+function salvarDados() {
+
+    const nome = document.getElementById('nome').value;
+    const nascimento = document.getElementById('nascimento').value;
+
+    let genero = "Não informado";
+
+    if (document.getElementById('radioLabel').checked) {
+        genero = "Masculino";
+    } else if (document.getElementById('radioLabel2').checked) {
+        genero = "Feminino";
+    } else if (document.getElementById('checkLabel').checked) {
+        genero = "Outro";
+    }
+
+    const select = document.getElementById('exampleFormControlSelect2');
+
+    const estilo = select.selectedIndex > 0
+        ? select.options[select.selectedIndex].text
+        : "Não informado";
+
+    const feedback = document.getElementById('exampleFormControlTextarea1').value;
+
+    const dados = {
+        nome: nome,
+        nascimento: nascimento,
+        genero: genero,
+        estilo: estilo,
+        feedback: feedback
+    };
+
+    localStorage.setItem('perfilRockNet', JSON.stringify(dados));
+
+    window.location.href = 'perfil.html';
+}
+
     </script>
 </body>
 </html>

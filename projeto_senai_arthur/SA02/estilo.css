@@ -1,0 +1,39 @@
+body {
+            background-color: #222;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .perfil {
+            background-color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .perfil h2 {
+            color: red;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .informacao {
+            padding: 12px;
+            border-bottom: 1px solid #666;
+        }
+
+        .informacao strong {
+            color: #ff4444;
+        }
+
+        .botoes {
+            text-align: center;
+            margin-top: 25px;
+        }

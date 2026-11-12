@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil - Rock.Net</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+         <nav>
+            <a href="telausuario.html">Tela de usuario</a>
+            <a href="index.html">Início</a>
+            <a href="bandas.html">Bandas</a>
+            <a href="albuns.html">Álbuns</a>
+          
+        </nav>
+        <h1>Rock.Net</h1>
+        <p>O blog mais simples sobre rock e seus derivados</p>
+    </header>
+
+    <main>
+
+        <div class="perfil">
+
+            <h2>Meu Perfil</h2>
+
+            <div class="informacao">
+                <strong>Nome:</strong>
+                <span id="nome">Carregando...</span>
+            </div>
+
+            <div class="informacao">
+                <strong>Nascimento:</strong>
+                <span id="nascimento"></span>
+            </div>
+
+            <div class="informacao">
+                <strong>Gênero:</strong>
+                <span id="genero"></span>
+            </div>
+
+            <div class="informacao">
+                <strong>Estilo musical:</strong>
+                <span id="estilo"></span>
+            </div>
+
+            <div class="informacao">
+                <strong>Feedback:</strong>
+                <span id="feedback"></span>
+            </div>
+
+            <div class="botoes">
+
+                <button class="btn btn-danger"
+                    onclick="window.location.href='index.html'">
+                    Voltar ao início
+                </button>
+
+                <button class="btn btn-secondary"
+                    onclick="window.location.href='telausuario.html'">
+                    Editar perfil
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        const dados = JSON.parse(
+            localStorage.getItem('perfilRockNet')
+        );
+
+        if (dados) {
+
+            document.getElementById('nome').textContent =
+                dados.nome || "Não informado";
+
+            document.getElementById('nascimento').textContent =
+                dados.nascimento
+                ? new Date(dados.nascimento + "T00:00:00").toLocaleDateString('pt-BR')
+                : "Não informado";
+
+            document.getElementById('genero').textContent =
+                dados.genero || "Não informado";
+
+            document.getElementById('estilo').textContent =
+                dados.estilo || "Não informado";
+
+            document.getElementById('feedback').textContent =
+                dados.feedback || "Nenhum feedback enviado";
+
+        } else {
+
+            document.querySelector('.perfil').innerHTML =
+                "<h2>Perfil não encontrado</h2>" +
+                "<p>Você ainda não realizou um cadastro.</p>" +
+                "<button class='btn btn-danger' onclick=\"window.location.href='telausuario.html'\">Cadastrar</button>";
+
+        }
+
+    </script>
+
+</body>
+</html>
